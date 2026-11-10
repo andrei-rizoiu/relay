@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Service-caller spawns bind the exact node ID and a strict logical request to Relaycast's durable invocation claim. Retries may rematerialize an authorized working directory, while a replay-only lookup recovers an accepted invocation when that directory is no longer safe to materialize; neither path needs a second local lifetime ledger. `@agent-relay/core-bridge` now accepts only schema-v2 challenge credentials and refuses a core missing any required service-caller method.
+- Service-caller spawns bind the exact node ID and a strict logical request to Relaycast's durable invocation claim. Retries may rematerialize an authorized working directory, while an explicit server-proven replay-resume contract recovers only a definitely-unsent accepted invocation when that directory is no longer safe to materialize; neither path needs a second local lifetime ledger, and unknown send outcomes are never resubmitted. `@agent-relay/core-bridge` now accepts only schema-v2 challenge credentials and refuses a core missing any required service-caller method.
 - Authored TypeScript cloud-worker assignments resolve the CLI's pinned Surface from isolated run directories when no dependency is supplied, preserving assignment-provided packages.
 
 ## [18.0.0] - 2026-11-09
